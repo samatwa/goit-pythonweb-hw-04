@@ -1,0 +1,7 @@
+services:
+  file-sorter:
+    build: .
+    container_name: file-sorter
+    volumes:
+      - ./source_folder:/app/source_folder
+      - ./output_folder:/app/output_folder
